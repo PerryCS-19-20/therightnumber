@@ -2,13 +2,15 @@
            body{
         		background-color: maroon;
         		color: white;
+			   	text-align: center;
       		}
       		#profile-pic{
         		height: 200px;
         		width: 200px;
         		text-align: center;
       		}
-		    .fav-songs{
+			.fav-songs{
 			     font-weight: bold;
 		    }
 
+	
