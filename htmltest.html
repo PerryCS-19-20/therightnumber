@@ -1,0 +1,20 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>htmltest</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script>
+            function testHTML(){
+                var userInput = document.getElementById("inputText");
+                document.getElementById("spam").innerHTML = userInput.value;
+            }
+        </script>
+    </head>
+    <body>
+        <textarea rows="10" cols="80" id="inputText"></textarea>
+        <button onclick="testHTML();">Test!</button>
+        <span id="spam"></span>
+    </body>
+</html>
