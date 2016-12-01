@@ -1,5 +1,5 @@
 function buildMap(x){
-    var x = getElementById("mapPlacement");
+    var x = document.getElementById("mapPlacement");
     var bullet = document.createElement(UL);
     var listItem = document.createElement(LI);
     x.appendChild("unorderedList");
