@@ -2,7 +2,6 @@
             body{
         		background-color: maroon;
         		color: white;
-			text-align: center;
             }
             #profile-pic{
         		height: 200px;
@@ -11,6 +10,9 @@
             }
             .fav-songs{
 			font-weight: bold;
+            }
+            table, th, td{
+                        border: 1px;
             }
 
 	
