@@ -7,8 +7,22 @@ and open the template in the editor.
     <head>
         <title></title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script>
+            function addItem(){
+                for(var i = 0; i < 100; i++){
+                    var node = document.createElement("LI");
+                    var userInput = document.getElementById("inputText");
+                    node.textContent = userInput.value;
+
+                    document.getElementById("list").appendChild(node);
+                }
+            }
+        </script>
     </head>
     <body>
-        
+        <textarea id="inputText"></textarea>
+        <button onclick="addItem()">Add</button>
+        <ul id="list"></ul>
     </body>
 </html>
