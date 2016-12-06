@@ -8,7 +8,7 @@
                 border: solid black 1px;
             }
             td {
-                text-align: right;
+                text-align: center;
             }
         </style>
     </head>
@@ -17,14 +17,15 @@
         Table Width:<input type="range" id="tableWidth" min="1" max="20" value="10" onchange="buildTimesTable();">
         <br>
         <script>
+            var timesTable = document.createElement('table');
+            document.body.appendChild(timesTable);
             function buildTimesTable(){
-                var timesTable = document.createElement('table');
-                document.body.appendChild(timesTable);
                 for(var i = 0; i < 11; i++){
                     var tableRow = document.createElement('tr');
                     timesTable.appendChild(tableRow);
                     
                     for(var j = 0; j < 11; j++){
+                        var z = document.getElementById('tableWidth').getAttribute('value');
                         var tableData = document.createElement('td');
                         tableRow.appendChild(tableData);
                         
@@ -38,8 +39,7 @@
                             }else{
                                 tableData.textContent = j*i;
                             }
-                        }
-                        
+                        } 
                     }
                 }
             }
