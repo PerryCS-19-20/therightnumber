@@ -19,6 +19,6 @@
             a:hover   {color:white; background-color:transparent; text-decoration:underline}
             a:active  {color:yellow; background-color:transparent; text-decoration:underline}
             #grad{
-                background: linear-gradient(blue, white);
+                background-image: linear-gradient(blue, white);
             }
 	
