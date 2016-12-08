@@ -20,5 +20,6 @@
             a:active  {color:yellow; background-color:transparent; text-decoration:underline}
             #grad{
                 background-image: linear-gradient(blue, white);
+                height: 1000px;
             }
 	
