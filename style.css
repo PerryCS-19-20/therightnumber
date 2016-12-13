@@ -1,19 +1,26 @@
 
             body{
-        		background-color: midnightblue;
+        		background-color: black;
         		color: white;
+                        text-align: center;
+                        
             }
+            
             #profile-pic{
         		height: 200px;
         		width: 200px;
         		text-align: center;
+                        border: solid 1px;
             }
+            
             .fav-songs{
 			font-weight: bold;
             }
+            
             table, th, td{
                         border: 1px;
             }
+            
             a:link    {color:blue; background-color:transparent; text-decoration:none}
             a:visited {color:lightblue; background-color:transparent; text-decoration:none}
             a:hover   {color:white; background-color:transparent; text-decoration:underline}

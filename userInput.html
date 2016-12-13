@@ -3,16 +3,17 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>Cylinder Calc</title>
+        <title>Potential Gravitational Energy Calc:</title>
         <script>
             function calc() {
-                var h = parseFloat(document.getElementById("height").value);
-                var r = parseFloat(document.getElementById("rad").value);
-                var vol = document.getElementById("vol");
+                var m = document.getElementById("mass").value;
+                var g = 9.81;
+                var h = document.getElementById("heightened").value;
+                var u = document.getElementById("pot");
 
 
-                var area = Math.PI * r * r;          // Calculate area of bottom circle
-                vol.value = (area * h).toFixed(2);   // Show volume of cylinder to 2 decimal places
+                var e = mgh;         // Calculate potential energy from gravity
+                u.value = e;
             }
         </script>
         <style>
@@ -22,15 +23,16 @@
         </style>
     </head>
     <body>
-        <h1>Cylinder volume:</h1>
+        <h1>Net Force:</h1>
         <img src="http://images.tutorvista.com/cms/images/67/right-cylinder.png" style="float: left; height: 150px; margin-right: 5px;">
-        <h2>v = h &pi; r <sup>2</sup></h2>
+        <h2>U<sub>g</sub> = mgh</h2>
         
-        h: <input type="number" id="height" placeholder="height"><br>
-        r: <input type="number" id="rad" placeholder="radius">
+        m: <input id="massive"><br>
+        g: 9.81<br>
+        h: <input id="heightened">
         <button onclick="calc();">Calculate</button>
         <hr>
-        v: <input type="output" id="vol" placeholder="volume" readonly>
+        u: <p id="pot"></p>
     </body>
 </html>
 
