@@ -12,8 +12,8 @@
                 var u = document.getElementById("pot");
 
 
-                var e = mgh;         // Calculate potential energy from gravity
-                u.value = e;
+                var e = m*g*h;         // Calculate potential energy from gravity
+                u.textContent = e + "J";
             }
         </script>
         <style>
@@ -23,15 +23,17 @@
         </style>
     </head>
     <body>
-        <h1>Net Force:</h1>
-        <img src="http://images.tutorvista.com/cms/images/67/right-cylinder.png" style="float: left; height: 150px; margin-right: 5px;">
+        <h1>Potential Energy:</h1>
+        <img src="http://philschatz.com/physics-book/resources/Figure_08_03_04a.jpg" style="float: left; height: 150px; margin-right: 5px;">
         <h2>U<sub>g</sub> = mgh</h2>
         
-        m: <input id="massive"><br>
+        m: <input id="mass"><br>
         g: 9.81<br>
         h: <input id="heightened">
         <button onclick="calc();">Calculate</button>
         <hr>
+        <br>
+        <br>
         u: <p id="pot"></p>
     </body>
 </html>
