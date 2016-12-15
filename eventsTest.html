@@ -1,25 +1,21 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
 <!DOCTYPE html>
 <html>
     <head>
         <title>Events Test</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="menu.css">
         <script>
             function changeColor(theColor){
                 document.body.style.backgroundColor = theColor;
             }
             
         </script>
+        <script src="sitemap.js"></script>
     </head>
-    <body>
-        <h3>
-            <ul>
-                <li onmouseover="changeColor('red')">Red</li>
-                <li onmouseover="changeColor('blue')">Blue</li>
-                <li onmouseover="changeColor('green')">Green</li>
-            </ul>
-        </h3>
+    <body onload='buildMap("menubar")'>
+        <div id='menubar'></div>
+                <p onmouseover="changeColor('red');">Red</p>
+                <p onmouseover="changeColor('blue');">Blue</p>
+                <p onmouseover="changeColor('green');">Green</p>
     </body>
 </html>

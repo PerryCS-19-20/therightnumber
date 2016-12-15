@@ -26,4 +26,8 @@
             a:hover   {color:white; background-color:transparent; text-decoration:underline}
             a:active  {color:yellow; background-color:transparent; text-decoration:underline}
             
+            .quota{
+                font-size: 10px;
+            }
+            
 	
